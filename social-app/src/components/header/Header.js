@@ -1,6 +1,7 @@
 import "./Header.css";
-import { Home, Message, Notifications, People, Search, Group, Storefront } from "@material-ui/icons";
+import { Home, Message, Notifications, Search, Group, Storefront, Person } from "@material-ui/icons";
 import { Avatar, IconButton } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -16,27 +17,40 @@ export default function Header() {
         <div className="headerCenter">
           <div className="headerLinks">    
             <IconButton>
+              <Link className='headerLink' to="/">
               <Home />
               <h6>Home</h6>
+              </Link>
             </IconButton>
+
             <IconButton>
-              <People />
-              <h6>Network</h6>
+              <Link className='headerLink' to="/Profile">
+              <Person />
+              <h6>Profile</h6>
+              </Link>
             </IconButton>
+
             <IconButton>
+              <Link className='headerLink' to="/Message">
               <Message />
               <h6>Message</h6>
+              </Link>
             </IconButton>
+
             <IconButton>
+              <Link className='headerLink' to="/#">
               <Notifications />
               <h6>Notifications</h6>
+              </Link>
             </IconButton>
           </div>
         </div>
         <div className="headerRight">
           <Avatar />
           <h4>Kamu Joan</h4>
-          <span>SignOut</span>
+          <Link className='loginLink' to='/Login'>
+          SignOut
+          </Link>
         </div>
       </div>
     </>

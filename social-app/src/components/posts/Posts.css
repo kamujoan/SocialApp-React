@@ -1,0 +1,140 @@
+.posts {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.37);
+}
+.postsWrapper {
+  padding: 10px;
+}
+.postsTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px ;
+  
+}
+.postsTopLeft {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.postsUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+.postDate {
+  font-size: 12px;
+  margin: 0 10px;
+}
+.postsCenter {
+  margin: 10px 10px ;
+}
+.postsImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.IconImg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.postsBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
+  
+}
+.postsBottomLeft {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.postsLikeCounter {
+  font-size: 15px;
+}
+.postsCommentText {
+  cursor: pointer;
+  font-size: 15px;
+}
+.postsBottomRight {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.postsComment{
+    cursor: pointer;
+}
+
+
+/*.posts{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0;
+      -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.postsWrapper{
+    padding: 10px;
+}
+.postsTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postsTopLeft{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.postsUsername{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.postDate{
+    font-size: 12px;
+}
+.postsCenter{
+    margin: 20px 0;
+}
+.postsImg{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 500px;
+    object-fit: contain;
+}
+.IconImg{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.postsBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postsBottomLeft{
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+.postsLikeCounter{
+    font-size: 15px;
+}
+.postsBottomRight{
+    margin-right: 20px;
+}
+.postsComment{
+    cursor: pointer;
+}
+*/

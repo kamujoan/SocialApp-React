@@ -1,9 +1,11 @@
 import "./Header.css";
-import { Home, Message, Notifications, Search, Group, Storefront, Person } from "@material-ui/icons";
+import { Home, Message, Notifications, Search,  Person } from "@material-ui/icons";
 import { Avatar, IconButton } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+
+  let user = JSON.parse(localStorage.getItem("user"));
   return (
     <>
       <div className="header">
@@ -24,14 +26,14 @@ export default function Header() {
             </IconButton>
 
             <IconButton>
-              <Link className='headerLink' to="/Profile">
+              <Link className='headerLink' to="/profile">
               <Person />
               <h6>Profile</h6>
               </Link>
             </IconButton>
 
             <IconButton>
-              <Link className='headerLink' to="/Message">
+              <Link className='headerLink' to="/messages">
               <Message />
               <h6>Message</h6>
               </Link>
@@ -46,8 +48,8 @@ export default function Header() {
           </div>
         </div>
         <div className="headerRight">
-          <Avatar />
-          <h4>Kamu Joan</h4>
+          <Avatar src={user.photoURL}/>
+          <h4>{user.displayName}</h4>
           <Link className='loginLink' to='/Login'>
           SignOut
           </Link>

@@ -1,0 +1,50 @@
+.comments {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: left;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+   max-height: 65vh;
+  left: calc(50% - 15rem);
+  overflow-y: scroll;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(236, 236, 234);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(107, 106, 101);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+.user{
+  display: flex;
+}
+.user > h5{
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.avatar{
+  margin-right: 5px;
+}
+.text > p{
+  font-size: 15px;
+  color: rgb(61, 3, 3);
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+.close{
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    background-color: none;
+    z-index: 100;
+    top: 0;
+   flex: right;
+}

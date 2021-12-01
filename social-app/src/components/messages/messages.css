@@ -1,0 +1,80 @@
+.messageFeed{
+  background-color: burlywood;
+}
+.message { 
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  background-color: rgb(240, 233, 233);
+  padding: 1rem;
+  text-align: left;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+   max-height: 65vh;
+  left: calc(50% - 15rem);
+  overflow-y: scroll;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(236, 236, 234);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(107, 106, 101);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+p{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow-wrap: break-word;
+  max-width: 80%;
+}
+.msg{
+  display: flex;
+  padding: 10px 10px 10px;
+  border-radius: 3000px;
+  align-items: center;
+   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+  width: 16rem;
+}
+.sent{
+  border-top-right-radius: 1000px;
+  flex-direction: row-reverse;
+  text-align: end;
+  float: left;
+}
+.sent .msg{
+background-color: white;
+}
+.received{
+  border: 1px solid lightgray;
+  border-top-right-radius: 1000px;
+  float: right;
+}
+.received .msg{
+  background-color: rgb(204, 142, 142);
+}
+.sendMsg{
+  position: fixed;
+  display: flex;
+  width: 30rem;
+  bottom: 0;
+  z-index: 1;
+  border-top: 1px solid lightgray;
+  margin-left: -5px;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: #FAFAFA;
+}
+.msgs{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}

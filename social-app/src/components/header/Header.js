@@ -7,7 +7,6 @@ export default function Header() {
 
   let user = JSON.parse(localStorage.getItem("user"));
   return (
-    <>
       <div className="header">
         <div className="headerLeft">
           <h3 className="logo">Kamu</h3>
@@ -34,7 +33,7 @@ export default function Header() {
 
             <IconButton>
               <Link className='headerLink' to="/messages">
-              <Message />
+              <Message/>
               <h6>Message</h6>
               </Link>
             </IconButton>
@@ -54,7 +53,10 @@ export default function Header() {
           SignOut
           </Link>
         </div>
+       
+        
       </div>
-    </>
   );
 }
+
+
